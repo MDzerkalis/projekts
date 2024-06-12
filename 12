@@ -1,0 +1,71 @@
+<img src="oak.jpg" alt="Apraksts par attēlu" width="200px">
+  <br>
+  <a href="https://www.delfi.lv">Delfi</a>
+  <br>
+  <a href="par_mums.html">Par mums</a>
+  <ol>
+    <li>Pirmais</li>
+    <li>Otrais</li>
+    <li>Trešais</li>
+  </ol>
+  <ol type="A">
+    <li>Pirmais</li>
+    <li>Otrais</li>
+    <li>Trešais</li>
+  </ol>
+  <ol type="A" start="2">
+    <li>Pirmais</li>
+    <li>Otrais</li>
+    <li>Trešais</li>
+  </ol>
+  <ol type="I">
+    <li>Pirmais</li>
+    <li>Otrais</li>
+    <li>Trešais</li>
+  </ol>
+  <ul>
+    <li>Pirmais</li>
+    <li>Otrais</li>
+    <li>Trešais</li>
+  </ul>
+  <ul type="square">
+    <li>Pirmais</li>
+    <li>Otrais</li>
+    <li>Trešais</li>
+  </ul>
+    </secion>
+
+    <!--body jeb skelets beidzas-->
+    </main>
+  <a href="kontakti.html">Kontakti</a>
+  <!--sekcija tabula-->
+  <secion id="tabula">
+  <table border="4">
+    <tr>
+      <td>Nr</td>
+      <td>Nosaukums</td>
+    </tr>
+    <tr>
+      <td>1.</td>
+      <td>Krūms</td>
+      <tr>
+        <td>2</td>
+        <td>Augi</td>
+      </tr>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Koks</td>
+    </tr>
+  </table>
+
+  </secion>
+  <!--tabulas beigas-->
+   <!--kājene un & autortiesību simbols-->
+  <footer>&copy; Mana firma</footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
