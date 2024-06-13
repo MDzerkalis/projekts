@@ -12,14 +12,23 @@
 
 <body>
   <header> <!-- galvene -->
-  <h1>Sveiki, pasaule!</h1>
+        <nav class="topnav">" <!--navigācija klasei-->
+          <a href="index.html" class="active">Sākums</a> <!-- class active =paredzu ka tur būs cita fona klāsa, lai viņš atšķirtos no citiem= -->
+          <a href="par_mums.html">Par mums</a>
+          <a href="kontakti.html">Kontakti</a>
+        </nav>  
+  
   </header>
-  <hr>
+       <aside class="sidebar"> <!--iekšējā atsauce no sekcijas līdz sekcijai = sāanu josla-->
+         <a href="#saturs">Saturs</a> <!--slidbar opcija-->
+         <A href="#tabula">Tabula</a>
+         </aside>
   <main><!-- saturs jeb bodt,skelets -->
-    
+    <h1>Sveiki, pasaule!</h1>
+    <p>Tests krāsa paragrāfam</p>
   <section id="saturs"><!-- sekcijas identificēšana???????? -->
   <p>Šis ir mans pirmais HTML!</p>
-  <img src="bilde.jpg" width="200px">
+  <img src="oak.jpg" width="200px">
   <br>
   <ul type="square">
     <li>Pirmais</li>
@@ -52,11 +61,12 @@
   </section>
     <section id="canva"> <!--canvas sekcija lai varetu zimet-->
 <canvas id="zimejums" width="500" height="400"></canvas>
-      <button onclick="taisnstūris()">Parādi taisnstūris!</button>
-      <button onclick="aplis()">Parādi aplis!</button>
-       <button onclick="līnija()">Parādi līniju!</button>
-      <button onclick="teksts()">Parādi tekstu!</button>
+     
     </section>
+    <button onclick="taisnstūris()">Parādi taisnstūris!</button>
+    <button onclick="aplis()">Parādi aplis!</button>
+     <button onclick="līnija()">Parādi līniju!</button>
+    <button onclick="teksts()">Parādi tekstu!</button>
   </main>
   <footer>&copy; Mana firma</footer><!--kājene -->
   <script src="script.js"></script>

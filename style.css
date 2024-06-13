@@ -1,12 +1,101 @@
-html {
+html, body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Sofia", sans-serif;";
+  background-color: #ea8a8a; 
 }
 
-body {
-  background-color: #68acb1;
-  font-family: "Sofia";
+
+.topnav {  /*.topnav atsauce uz klasi*/
+  overflow: hidden; /*paslēps pārlieku lielo informāciju*/
+  background-color: #333; /*fona krāsa*/
+  margin-top: 0px;
+  display: flex;   /*izkārtojuma veids konteineriem 17-18 rinda*/
+  justify-content: space-around;
+  margin-left: 200px;/*sāna joslas platums*/
 }
+
+.topnav a {
+  flex: 1; /*teksts izkārtojas vienādi*/
+  display: flex;
+  justify-content: center;
+  align-items: center; /*a vērtības iecentrēt lodziņā*/
+  float: left; /*novietojums*/
+  color: #f2f2f2; /*krāsa*/
+  text-align: center; /*centrēšana*/
+  padding: 14px 16px; /*pogas platums augstums*/
+  text-decoration: none; /*noņem pasvītrojumu*/
+  font-size: 17px; /*fonta izmērs*/ 
+}
+
+.topnav a:hover { /*navigācijas klases selektors, kad kursors uz pogas parādās kādas izmaiņās uzliekam kursoru*/
+  background-color: #ddd; /*fona krāsa*/
+color: black; 
+}  
+
+.topnav a.active { /*navigācijas klases selektors, kad uzspiests*/
+background-color: #04AA6D; /*fona krāsa*/;
+color: black;
+}
+
+.sidebar { /*sāna josla*/
+height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333; 
+}
+.sidebar a { /*sāna joslas opcijas uzliekot kursoru*/
+padding: 10px;
+  text-decoration: none; /*noņemt pasvītrojumu*/
+font-size: 18px;
+  color: white;
+  display: block; /*blokos katru savā rindā sākums un tabula*/
+}
+
+.sidebar a:hover  {
+background-color: #ddd;
+  color: black;
+}
+main {/*tipveida selektors main un footer viss galvenais saturs pabīdas par 200px un atkāpe 20px*/
+margin-left: 200px;
+padding: 20px;
+  background-color: #d1d1d1;;
+  } 
+footer {
+background-color: #333;
+color: white;
+  text-align: center;
+  padding: 10px;
+  position: flixed;
+  bottom: 0;
+  width: 100%; /*paņem atlikušo platumu*/
+}
+
+button {
+background-color: #0ea1e1;
+color: white;
+ border: none; 
+  padding: 10px 20px; /*vienādas atstarpes*/
+  text-align: center;
+  text-decoration: none; /*nav pasvītrojums vai kāds stils*/
+  display: inline-block; /*novietojums*/
+  cursor: pointer; /*pirkstiņš uzliekot virsū*/
+  font-size: 10px;
+  margin: 4px 2px;
+  margin-bottom: 50px;
+  transition: background-color 0.3s ease; /*pārvietojums*/
+  border-radius: 12px;
+}
+  button:hover { /*kad uzliek kursoru uz pogas*/
+background-color: #6fc7ec;
+    color: #cd5656;
+  }
+
 
 /* komentārs css fona krāsa*/
 /*selektors*/
@@ -22,4 +111,50 @@ p {
   color: #cf0202;
   /*rindkopas krāsa*/
   font-size: 28px;
+}
+
+#saturs { /*uz id atsaucas #nosaukums*/
+background-color: red;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;  
+}  
+
+#saturs p {
+color: yellow
+  font-size: 30px;
+}
+
+#saturs img {
+display: block;
+  border-radius: 8px;
+  margin: 0 auto; 
+}
+
+#tabula {
+background-color: #f4a9a9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#canva {
+  background-color: #20f34a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#tabula table {
+  width: 100%;
+  border-collapse: collapse; /* apmales veids, lai 1 līnija*/
+  background-color: white;
+}
+#tabula td { /*tabulas kolonnas*/
+padding: 10px;
+  border: 1px solid #f80d0d;
+  text-align: center;
+}
+
+#tabula tr:nth-child(even){ /*nepāra rindas izkrāso #tabula tr:nth-child(1) tikai 1 kolonnu #tabula tr:nth-child(2) 2rinda*/
+background-color: green;
 }
