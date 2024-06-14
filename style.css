@@ -155,6 +155,6 @@ padding: 10px;
   text-align: center;
 }
 
-#tabula tr:nth-child(even){ /*nepāra rindas izkrāso #tabula tr:nth-child(1) tikai 1 kolonnu #tabula tr:nth-child(2) 2rinda*/
+#tabula tr:nth-child(even){ /*nepāra rindas izkrāso #tabula tr:nth-child(1) tikai 1 kolonnu #tabula tr:nth-child(2) 2rinda odd(nepāra)*/
 background-color: green;
 }

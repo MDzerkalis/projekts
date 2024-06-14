@@ -50,3 +50,47 @@ function teksts() {
   konteksts.strokeSyle = "yellow";
   konteksts.stroke();
 }
+
+//14.06 nodarbība JS ar mainīgajiem 
+function aprekins() {  
+  let pirmais = 5;
+  let otrais = 10.5;
+  let summa = pirmais / otrais;
+  console.log("Atbilde ir:" + summa);//lai izsauktu mainīgo izvadīt..console.log(raksta ko grib lai vieglāk saprastu pašam=apskatīt consule devtool)
+  }
+
+function aprekins() {  
+  let pirmais = 5;
+  let otrais = 10.5;
+  let summa = pirmais / otrais;
+  console.log("Atbilde ir:" + summa);
+}
+//komentārs atcelts 2 piemērs}
+//JS aprēķina consule logā ko ievadīju
+//function aprekins() {  
+    //let pirmais = document.getElementById("a").value; /*pirmais skaitlis*/
+    //let otrais = document.getElementById("b").value;/*otrais skaitlis*/
+    //let summa = pirmais * otrais;
+   // console.log("Atbilde ir:" + summa);
+//}
+
+//parseFloat() - pārveido tekstu par skaitli un ar komatiem var strādāt
+//komentāra piemērs
+  //function aprekins() {
+   // let pirmais = parseFloat(document.getElementById("a").value);
+   // let otrais = parseFloat(document.getElementById("b").value);
+   // let summa = pirmais * otrais;
+   // console.log("Atbilde ir:" + summa); //paragrāfa vietā atsaucamais, kur vēlamies izvadīt atbildi
+    //document.getElementById("rezultats").innerText="Atbilde ir:" + summa;
+ // }
+
+
+//ar teksta logu next piemērs kur tekstu apvieno ar skaitli
+function aprekins() {
+  let vards = document.getElementById("vards").value;
+  let pirmais = parseFloat(document.getElementById("a").value);
+  let otrais = parseFloat(document.getElementById("b").value);
+  let summa = pirmais * otrais;
+  console.log("Tevi sauc: " + vards + " Atbilde ir:" + summa);
+  document.getElementById("rezultats").innerHTML = "Tevi sauc: " + vards + "<br>Tu ievadīji a vērtību:" + pirmais + "<br>un otrā vērtība" + otrais + "<br>Atbilde ir:" + summa;
+}
