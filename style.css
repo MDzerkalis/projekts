@@ -99,22 +99,22 @@ background-color: #6fc7ec;
 
 /* komentārs css fona krāsa*/
 /*selektors*/
-h1 {
-  color: aqua;
-  /*krāsa*/
+h1 { 
+  background-color: #b6fbe7;
   font-family: 'Courier New', Courier, monospace;
   font-size: 50px;
+  font-weight: bold; /*neiet*/
   /*izmērs*/
 }
 
 p {
-  color: #cf0202;
+  color: #211174;
   /*rindkopas krāsa*/
   font-size: 28px;
 }
 
 #saturs { /*uz id atsaucas #nosaukums*/
-background-color: red;
+background-color: #b6fbe7;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;  
@@ -138,7 +138,7 @@ background-color: #f4a9a9;
   margin-bottom: 20px;
 }
 #canva {
-  background-color: #20f34a;
+  background-color: #b6fbe7;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -151,10 +151,29 @@ background-color: #f4a9a9;
 }
 #tabula td { /*tabulas kolonnas*/
 padding: 10px;
-  border: 1px solid #f80d0d;
+  border: 1px solid #e5a9a9;
   text-align: center;
 }
 
 #tabula tr:nth-child(even){ /*nepāra rindas izkrāso #tabula tr:nth-child(1) tikai 1 kolonnu #tabula tr:nth-child(2) 2rinda odd(nepāra)*/
-background-color: green;
+background-color: #b6fbe7;
+}
+
+#video { /*uz id atsaucas #nosaukums*/
+background-color: #b6fbe7;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#karte { /*uz id atsaucas #nosaukums*/
+  background-color: #b6fbe7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#audio { /*uz id atsaucas #nosaukums*/
+  background-color: #b6fbe7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }

@@ -23,6 +23,11 @@
        <aside class="sidebar"> <!--iekšējā atsauce no sekcijas līdz sekcijai = sāanu josla-->
          <a href="#saturs">Saturs</a> <!--slidbar opcija-->
          <A href="#tabula">Tabula</a>
+         <A href="#aprekini">Aprēķini</a>
+         <A href="#zimejums">Zīmēšana JS</a>
+          <A href="#video">Video</a>
+         <A href="#karte">Karte</a>
+         <A href="#audio">Audio</a>
          </aside>
   <main><!-- saturs jeb bodt,skelets -->
     <h1>Sveiki, pasaule!</h1>
@@ -41,28 +46,48 @@
   </section>
     
   <section id="tabula"><!-- sekcijas identificēšana???????? -->
-  <table border="1">
+  <h1>Tabula ar ienākuemiem un izdevumiem</h1>
+    <table border="1">
     <tr>
-      <td>1.rinda 1.kolonna</td>
-      <td>1.rinda 2.kolonna</td>
+      <td>Nr.</td>
+      <td>Vārds</td>
+      <td>Uzvārds</td>
+      <td>Ienākumi</td>
+      <td>Izdevumi</td>
     </tr>
     <tr>
-      <td>2. rinda 1. kolonna</td>
-      <td>2. rinda 2. kolonna</td>
+      <td>1</td>
+      <td>Jānis</td>
+      <td>Bērziņš</td>
+      <td>EUR1000</td>
+      <td>EUR1500</td>
     </tr>
     <tr>
-      <td>3. rinda 1. kolonna</td>
-      <td>3. rinda 2. kolonna</td>
+      <td>2</td>
+      <td>Laura</td>
+      <td>Liepiņa</td>
+      <td>EUR1500</td>
+      <td>EUR1200</td>
     </tr>
     <tr>
-      <td>4. rinda 1. kolonna</td>
-      <td>4. rinda 2. kolonna</td>
+      <td>3</td>
+      <td>Juris</td>
+      <td>Zariņš</td>
+      <td>EUR2100</td>
+      <td rowspan="2">EUR2100</td>
     </tr>
+      <tr>
+        <td>4</td>
+        <td colspan="2">Jānis</td>
+        <td>1750</td>
+        
+      </tr>
   </table>
+    <br>
     <button type="button" class="btn btn-danger" onclick="aprekins()">Mana poga bootstrap+JS</button><!--liste ar bootstrap un JS consule-->
   </section>
     
-    <section id="saturs"> <!--Pogas sasaiste ar JS aprēķiniem ar jau esošu ID-->
+    <section id="aprekini"> <!--Pogas sasaiste ar JS aprēķiniem ar jau esošu ID-->
       <label for="a">Ievadi savu vārdu</label>
       <input type="text" id="vards" name ="vards">
       <label for="a">Ievadi a vērtību</label>
@@ -79,10 +104,26 @@
 <canvas id="zimejums" width="500" height="400"></canvas>
      
     </section>
-    <button onclick="taisnstūris()">Parādi taisnstūris!</button>
-    <button onclick="aplis()">Parādi aplis!</button>
-     <button onclick="līnija()">Parādi līniju!</button>
-    <button onclick="teksts()">Parādi tekstu!</button>
+        <button onclick="taisnstūris()">Parādi taisnstūris!</button>
+        <button onclick="aplis()">Parādi aplis!</button>
+         <button onclick="līnija()">Parādi līniju!</button>
+        <button onclick="teksts()">Parādi tekstu!</button>
+    
+    <section id="video"width="500" height="400"> <!--video sekcija ar platumu 500 un augstumu 400-->
+      <h1>Video</h1>
+      <iframe width="430" height="315" src="https://www.youtube.com/embed/DbMMXh95-RY?si=b5jYF2SYEFXvDWtt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section id="karte"width="500" height="400"> <!--kartes <sekcij-->
+      <h1>Jelgavas Svētās Trīsvienības baznīcas tornis</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2193.270973466069!2d23.726394411549425!3d56.65239957331964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ef254515871151%3A0x141aa2ac393acae8!2sJelgava%20St.%20Trinity%20Church%20Tower!5e0!3m2!1sen!2slv!4v1718645325836!5m2!1sen!2slv" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section id="audio"width="100" height="100"> <!--audio faila atskaņotājs <sekcij-->
+        <H1>Audio faila atskaņotājs</H1>
+        <audio controls>
+          <source src="good.m4a" type="audio/ogg">
+          <source src="good.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+        </section>
   </main>
   <footer>&copy; Mana firma</footer><!--kājene -->
   <script src="script.js"></script>
