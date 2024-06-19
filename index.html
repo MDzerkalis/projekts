@@ -15,8 +15,8 @@
   <header> <!-- galvene -->
         <nav class="topnav">" <!--navigācija klasei-->
           <a href="index.html" class="active">Sākums</a> <!-- class active =paredzu ka tur būs cita fona klāsa, lai viņš atšķirtos no citiem= -->
-          <a href="par_mums.html">Par mums</a>
-          <a href="kontakti.html">Kontakti</a>
+          <a href="par_mums.html" onclick="atjaunotIetvaru(this); return false;">Par mums</a>
+          <a href="kontakti.html" onclick="atjaunotIetvaru(this); return false;">Kontakti</a>
         </nav>  
   
   </header>
@@ -29,7 +29,7 @@
          <A href="#karte">Karte</a>
          <A href="#audio">Audio</a>
          </aside>
-  <main><!-- saturs jeb bodt,skelets -->
+  <main id="lapas_saturs"><!--main id lapas saturs lai citā lpp varētu saturu nomainīt saturs jeb bodt,skelets -->
     <h1>Sveiki, pasaule!</h1>
     <p>Tests krāsa paragrāfam</p>
   <section id="saturs"><!-- sekcijas identificēšana???????? -->
