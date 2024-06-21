@@ -140,6 +140,8 @@ for (let i = 0; i < skaitlis.length; i++) {
     console.log("IRRR");
   }
 }
+
+
 //navigācijas pogas matemātika JS laukuma un perimetra aprēķini
 //parseFloat pārveido tekstu par skaitli//
 function aprekinat() {
@@ -149,6 +151,8 @@ function aprekinat() {
   let per = (pirmais + otrais) * 2;
   document.getElementById("atbilde").innerHTML = "laukums: " + laukums + "<br>Perimetrs: " + per;
 }
+
+/*----------------------Bounce efekts JS+CS---------------------*/
 
 let myText = document.getElementById("bounceTxt").innerHTML, l
 let wrapText = "";
