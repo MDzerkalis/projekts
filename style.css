@@ -95,6 +95,11 @@ main {
   ;
 }
 
+main h1 {
+  color: red;
+}
+
+
 footer {
   background-color: #333;
   color: white;
@@ -103,7 +108,8 @@ footer {
   position: flixed;
   bottom: 0;
   width: 100%;
-  position: fixed; /*footer fiksēšana lapās*/
+  position: fixed;
+  /*footer fiksēšana lapās*/
   /*paņem atlikušo platumu*/
 }
 
@@ -149,7 +155,7 @@ h1 {
 p {
   color: #211174;
   /*rindkopas krāsa*/
-  font-size: 28px;
+  font-size: 48px;
 }
 
 #saturs {
@@ -205,10 +211,14 @@ p {
 
 #video {
   /*uz id atsaucas #nosaukums*/
-  background-color: #b6fbe7;
+  background-color: #d9350d;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+#video h1 {
+  color: #211de2;
 }
 
 #karte {
@@ -231,7 +241,101 @@ p {
   width: 100%;
   height: 100%;
 }
-#lapas_saturs { /*nomainam html saturu pilnā izmērā*/
+
+#lapas_saturs {
+  /*nomainam html saturu pilnā izmērā*/
   width: 100%;
   height: 100%;
+}
+
+#visivideo {
+  width: 1500px;
+  height: 400px;
+}
+
+.ytvideo {
+  display: block;
+  float: left;
+}
+
+/*mainās bildes izmērrs par 20%*/
+.img-thumbnail:hover {
+  transform: scale(1.2);
+}
+
+/*----------------------Bounce */
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
+
+div {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+p {
+  color: #265687;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  text-align: center;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, .3);
+
+  em {
+    font-style: normal;
+    display: inline-block;
+
+    &:nth-child(1) {
+      color: #4285F4;
+    }
+
+    &:nth-child(2) {
+      color: #E94D3D;
+    }
+
+    &:nth-child(3) {
+      color: #F7C945;
+    }
+
+    &:nth-child(4) {
+      color: #4285F4;
+    }
+
+    &:nth-child(5) {
+      color: #34A853;
+    }
+
+    &:nth-child(6) {
+      color: #E94D3D;
+    }
+
+    &:nth-child(7) {
+      color: #318141;
+    }
+
+    &:nth-child(8) {
+      color: #292d65;
+    }
+
+    &.bounce-me {
+      -webkit-animation: bounce 4s infinite ease-in-out;
+      animation: bounce 4s infinite ease-in-out;
+    }
+  }
+}
+
+@-webkit-keyframes bounce {
+  60% {
+    -webkit-transform: translate(0px, -50px) scale(1.2);
+    opacity: 0.8;
+    text-shadow: 0px 150px 20px rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes bounce {
+  60% {
+    -webkit-transform: translate(0px, -50px) scale(1.2);
+    opacity: 0.8;
+    text-shadow: 0px 150px 20px rgba(0, 0, 0, 0.8);
+  }
 }

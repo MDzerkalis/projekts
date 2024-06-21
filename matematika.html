@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Kontakti</title>
+  <title>Matemātika</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <header> <!-- Šis ir mans virsraksts -->
-    <h1>Sazinies ar mums</h1>
+    <p id="bounceTxt">Matemātika</p>
   </header>
   <hr>
   <main>
@@ -20,16 +20,11 @@
     label for - definējam nosaukumu
     input type - ievadlauks katram savs nosaukums, lai viņu vaŗetu pēc tam apstrādāt un paņemt kuru vajag
     input type="submit" poga iesniegt piemēram-->
-      <form>
-        <label for="vards">Vārds:</label>
-        <input type="text" id="vards" name="vards"><br><br>
-        <label for="e_pasts">E-pasts</label>
-        <input for="email" id="epasts" name="epasts"><br><br>
-        <input type="submit" value="Iesniegt">
-      </form>
-      <br>
-
-      <a href="index.html">Atgriezties</a>
+      <!--input placeholder izmanto lai ievadlaukā parādīsies nosaukums augstums, platums-->
+      <input placeholder='Augstums' type="text" id="augstums" name="augstums"><br><br>
+      <input placeholder='Platums' type="text" id="paltums" name="paltums"><br><br>
+      <button id='lunp' onclick="aprekinat()">Aprēķināt</button>
+      <p id='atbilde'></p>
     </section>
   </main>
   <footer>&copy; Mana firma</footer>

@@ -7,123 +7,155 @@
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> <!--linka uz google fontu...-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--lai iekļautu ārējo css no bootstrap un viņu pievieno head, izmantojot bootsrap dokumentāciju, varam apstrādāt konkrētus html dizaina tagus-->
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--lai iekļautu ārējo css no bootstrap un viņu pievieno head, izmantojot bootsrap dokumentāciju, varam apstrādāt konkrētus html dizaina tagus-->
+
 </head>
 
 <body>
   <header> <!-- galvene -->
-        <nav class="topnav">" <!--navigācija klasei-->
-          <a href="index.html" class="active">Sākums</a> <!-- class active =paredzu ka tur būs cita fona klāsa, lai viņš atšķirtos no citiem= -->
-          <a href="par_mums.html" onclick="atjaunotIetvaru(this); return false;">Par mums</a>
-          <a href="kontakti.html" onclick="atjaunotIetvaru(this); return false;">Kontakti</a>
-        </nav>  
-  
+    <nav class="topnav">" <!--navigācija klasei-->
+      <a href="index.html" class="active">Sākums</a>
+      <!-- class active =paredzu ka tur būs cita fona klāsa, lai viņš atšķirtos no citiem= -->
+      <a href="par_mums.html" onclick="atjaunotIetvaru(this); return false;">Par mums</a>
+      <a href="kontakti.html" onclick="atjaunotIetvaru(this); return false;">Kontakti</a>
+      <a href="portfolio.html" onclick="atjaunotIetvaru(this); return false;">Portfolio</a>
+      <a href="matematika.html" onclick="atjaunotIetvaru(this); return false;">Matemātika</a>
+    </nav>
+
   </header>
-       <aside class="sidebar"> <!--iekšējā atsauce no sekcijas līdz sekcijai = sāanu josla-->
-         <a href="#saturs">Saturs</a> <!--slidbar opcija-->
-         <A href="#tabula">Tabula</a>
-         <A href="#aprekini">Aprēķini</a>
-         <A href="#zimejums">Zīmēšana JS</a>
-          <A href="#video">Video</a>
-         <A href="#karte">Karte</a>
-         <A href="#audio">Audio</a>
-         </aside>
+  <aside class="sidebar"> <!--iekšējā atsauce no sekcijas līdz sekcijai = sāanu josla-->
+    <a href="#saturs">Saturs</a> <!--slidbar opcija-->
+    <A href="#tabula">Tabula</a>
+    <A href="#aprekini">Aprēķini</a>
+    <A href="#zimejums">Zīmēšana JS</a>
+    <A href="#video">Video</a>
+    <A href="#karte">Karte</a>
+    <A href="#audio">Audio</a>
+  </aside>
   <main id="lapas_saturs"><!--main id lapas saturs lai citā lpp varētu saturu nomainīt saturs jeb bodt,skelets -->
     <h1>Sveiki, pasaule!</h1>
     <p>Tests krāsa paragrāfam</p>
-  <section id="saturs"><!-- sekcijas identificēšana???????? -->
-  <p>Šis ir mans pirmais HTML!</p>
-  <img src="oak.jpg" class="img-thumbnail" alt="Cinque Terre"width="200px">
-  <br>
-  <ul type="square">
-    <li>Pirmais</li>
-    <li>Otrais</li>
-    <li>Trešais</li>
-  </ul>
-  <a href="par_mums.html">Par mums</a>
-  <a href="kontakti.html">Sazināties</a>
-  </section>
-    
-  <section id="tabula"><!-- sekcijas identificēšana???????? -->
-  <h1>Tabula ar ienākuemiem un izdevumiem</h1>
-    <table border="1">
-    <tr>
-      <td>Nr.</td>
-      <td>Vārds</td>
-      <td>Uzvārds</td>
-      <td>Ienākumi</td>
-      <td>Izdevumi</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Jānis</td>
-      <td>Bērziņš</td>
-      <td>EUR1000</td>
-      <td>EUR1500</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Laura</td>
-      <td>Liepiņa</td>
-      <td>EUR1500</td>
-      <td>EUR1200</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Juris</td>
-      <td>Zariņš</td>
-      <td>EUR2100</td>
-      <td rowspan="2">EUR2100</td>
-    </tr>
-      <tr>
-        <td>4</td>
-        <td colspan="2">Jānis</td>
-        <td>1750</td>
-        
-      </tr>
-  </table>
-    <br>
-    <button type="button" class="btn btn-danger" onclick="aprekins()">Mana poga bootstrap+JS</button><!--liste ar bootstrap un JS consule-->
-  </section>
-    
+    <section id="saturs"><!-- sekcijas identificēšana???????? -->
+      <p>Šis ir mans pirmais HTML!</p>
+      <img src="oak.jpg" class="img-thumbnail" alt="Cinque Terre" width="200px">
+      <br>
+      <ul type="square">
+        <li>Pirmais</li>
+        <li>Otrais</li>
+        <li>Trešais</li>
+      </ul>
+      <a href="par_mums.html">Par mums</a>
+      <a href="kontakti.html">Sazināties</a>
+    </section>
+
+    <section id="tabula"><!-- sekcijas identificēšana???????? -->
+      <h1>Tabula ar ienākuemiem un izdevumiem</h1>
+      <table border="1">
+        <tr>
+          <td>Nr.</td>
+          <td>Vārds</td>
+          <td>Uzvārds</td>
+          <td>Ienākumi</td>
+          <td>Izdevumi</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Jānis</td>
+          <td>Bērziņš</td>
+          <td>EUR1000</td>
+          <td>EUR1500</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Laura</td>
+          <td>Liepiņa</td>
+          <td>EUR1500</td>
+          <td>EUR1200</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Juris</td>
+          <td>Zariņš</td>
+          <td>EUR2100</td>
+          <td rowspan="2">EUR2100</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td colspan="2">Jānis</td>
+          <td>1750</td>
+
+        </tr>
+      </table>
+      <br>
+      <button type="button" class="btn btn-danger" onclick="aprekins()">Mana poga
+        bootstrap+JS</button><!--liste ar bootstrap un JS consule-->
+    </section>
+
     <section id="aprekini"> <!--Pogas sasaiste ar JS aprēķiniem ar jau esošu ID-->
       <label for="a">Ievadi savu vārdu</label>
-      <input type="text" id="vards" name ="vards">
+      <input type="text" id="vards" name="vards">
       <label for="a">Ievadi a vērtību</label>
       <input type="number" id="a">
       <label for="b">Ievadi b vērtību</label>
       <input type="number" id="b">
-      <button type="button" class="btn btn-danger" onclick="aprekins()">Aprēķināt</button><!--liste ar bootstrap un JS-->
+      <button type="button" class="btn btn-danger"
+        onclick="aprekins()">Aprēķināt</button><!--liste ar bootstrap un JS-->
       <p id="rezultats">Šeit būs rezultāts aprēķina</p>
-      
-      
+
+
     </section>
-    
+
     <section id="canva"> <!--canvas sekcija lai varetu zimet-->
-<canvas id="zimejums" width="500" height="400"></canvas>
-     
+      <canvas id="zimejums" width="500" height="400"></canvas>
+
     </section>
-        <button onclick="taisnstūris()">Parādi taisnstūris!</button>
-        <button onclick="aplis()">Parādi aplis!</button>
-         <button onclick="līnija()">Parādi līniju!</button>
-        <button onclick="teksts()">Parādi tekstu!</button>
-    
-    <section id="video"width="500" height="400"> <!--video sekcija ar platumu 500 un augstumu 400-->
+    <button onclick="taisnsturis()">Parādi taisnstūris!</button>
+    <button onclick="aplis()">Parādi aplis!</button>
+    <button onclick="linija()">Parādi līniju!</button>
+    <button onclick="teksts()">Parādi tekstu!</button>
+
+    <section id="video" width="1500" height="400"> <!--video sekcija ar platumu 500 un augstumu 400-->
       <h1>Video</h1>
-      <iframe width="430" height="315" src="https://www.youtube.com/embed/DbMMXh95-RY?si=b5jYF2SYEFXvDWtt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <!--1 tiek izveidots id kā bloks, kurā ieliek klasi, lai neietekmētu novietojumu sekcijā -->
+      <div id='visivideo'>
+        <div class=ytvideo>
+          <iframe width="430" height="315" src="https://www.youtube.com/embed/DbMMXh95-RY?si=b5jYF2SYEFXvDWtt"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class=ytvideo>
+          <iframe width="430" height="315" src="https://www.youtube.com/embed/DbMMXh95-RY?si=b5jYF2SYEFXvDWtt"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class=ytvideo>
+          <iframe width="430" height="315" src="https://www.youtube.com/embed/DbMMXh95-RY?si=b5jYF2SYEFXvDWtt"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
     </section>
-    <section id="karte"width="500" height="400"> <!--kartes <sekcij-->
+    <section id="karte" width="500" height="400"> <!--kartes <sekcij-->
       <h1>Jelgavas Svētās Trīsvienības baznīcas tornis</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2193.270973466069!2d23.726394411549425!3d56.65239957331964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ef254515871151%3A0x141aa2ac393acae8!2sJelgava%20St.%20Trinity%20Church%20Tower!5e0!3m2!1sen!2slv!4v1718645325836!5m2!1sen!2slv" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <section id="audio"width="100" height="100"> <!--audio faila atskaņotājs <sekcij-->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2193.270973466069!2d23.726394411549425!3d56.65239957331964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ef254515871151%3A0x141aa2ac393acae8!2sJelgava%20St.%20Trinity%20Church%20Tower!5e0!3m2!1sen!2slv!4v1718645325836!5m2!1sen!2slv"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section id="audio" width="100" height="100"> <!--audio faila atskaņotājs <sekcij-->
         <H1>Audio faila atskaņotājs</H1>
         <audio controls>
           <source src="good.m4a" type="audio/ogg">
           <source src="good.m4a" type="audio/mpeg">
-        Your browser does not support the audio element.
+          Your browser does not support the audio element.
         </audio>
-        </section>
+      </section>
   </main>
   <footer>&copy; Mana firma</footer><!--kājene -->
   <script src="script.js"></script>
